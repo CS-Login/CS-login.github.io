@@ -266,12 +266,12 @@ body{
 	color: #ffeac5;
     font-weight:700;
     font-family:"Routhers DEMO";
-    font-size: 150px;
+    font-size: 75px;
 }
 .header-content .secondline{
     z-index: 2;
 	font-family:aladin;
-    font-size: 30px;
+    font-size: 20px;
     padding-top:20px ;
     font-weight:500;
     color: rgb(255, 255, 255,.8);
