@@ -44,7 +44,6 @@ input[type=number] {
   }
   #loader{
 	  display: flex;
-	  
       align-items: center;
       justify-content: center;
       flex-direction: column;
@@ -54,7 +53,7 @@ input[type=number] {
       font-family: poppins;
       background-color:#0E0D0D;
       color: whitesmoke;
-      font-size: 70px;
+      font-size: 5vw;
       width: 100%;
   }
 body{
@@ -70,8 +69,8 @@ body{
 	height: 100vh;
     width: 100%;;
     overflow: hidden;
-	transition-delay: 4s;
-    animation: scale 4s ease;
+	transition-delay: 3s;
+    animation: scale 1.5s ease;
     position:relative;
     display: block;
 }
@@ -272,10 +271,12 @@ body{
 .header-content .secondline{
     z-index: 2;
 	font-family:aladin;
-    font-size: 20px;
+    font-size: 3vw;
     padding-top:20px ;
     font-weight:500;
     color: rgb(255, 255, 255,.8);
+	-webkit-text-stroke-width:2px;
+	
 }
 .slash{
     animation-name: animateslash;
@@ -316,8 +317,7 @@ body{
 }
 .social-media{
     color: white;
-    width:  21px;
-    ;
+    width:30px;
     opacity: .6;
     margin: 8px;
     transition: all .4s ease;
@@ -815,7 +815,7 @@ padding-bottom: 40px;
     opacity: 1;
 	position: fixed;
 	right:5%;
-	bottom: 5%;
+	bottom:5%;
     background: transparent;
     padding-top: 10px;
     padding-bottom: 10px;
