@@ -44,6 +44,7 @@ input[type=number] {
   }
   #loader{
 	  display: flex;
+	  
       align-items: center;
       justify-content: center;
       flex-direction: column;
@@ -69,8 +70,8 @@ body{
 	height: 100vh;
     width: 100%;;
     overflow: hidden;
-	transition-delay: 3s;
-    animation: scale 1.5s ease;
+	transition-delay: 4s;
+    animation: scale 4s ease;
     position:relative;
     display: block;
 }
