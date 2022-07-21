@@ -105,6 +105,7 @@ body{
     background:transparent;
     overflow: hidden;
 }
+
 .menubar{
     position: absolute;
     right:4%;
@@ -211,10 +212,30 @@ body{
     opacity: 1;
     transform: rotate(-45deg);
 }
+#navigation-barcs{
+    position: fixed;
+    height: 10%;
+    width: 10%;
+    z-index: 3;
+    padding: 3px;
+    background:transparent;
+}
+#navigation-barcs img{
+    height: 100%;
+    position: absolute;
+    top: 18%;
+    left: 5%;
+    opacity: 1;
+	padding: 5px;
+    transition: all .4s ease;
+}
+#navigation-barcs img:hover{
+    opacity: 1;
+    transform:rotate(-45deg);
+}
 #navigation-bar img{
     height: 80px;
     position: absolute;
-    ;
     top: 15%;
     left: 2.5%;
     opacity: .8;
@@ -275,7 +296,7 @@ body{
     padding-top:20px ;
     font-weight:500;
     color: rgb(255, 255, 255,.8);
-	-webkit-text-stroke-width:2px;
+	-webkit-text-stroke-width:1px;
 	
 }
 .slash{
@@ -809,16 +830,9 @@ padding-bottom: 40px;
     width: 10%;
     padding-left: 1%;
     margin: 1%;
-    margin-left: -40px;
-    margin-top: 160px;
     z-index: 3;
     opacity: 1;
-	position: fixed;
-	right:5%;
-	bottom:5%;
     background: transparent;
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 
 .portfolio-text h2{
@@ -847,18 +861,36 @@ padding-bottom: 40px;
     color:#020202;
     transition: all .4s ease;
     outline: none;
-    margin: 20px;
     border: 1.5px solid #c70039;
     cursor: pointer;
     overflow: hidden;
-    position: relative;
+	position: fixed;
+	right:5%;
+	bottom:5%;
+}
+.portfolio-text1 button{
+    font-size: 14px;
+    opacity: .8;
+    font-family: poppins;
+    font-weight: 200;
+    padding: 8px 15px;
+	border-radius: 40px;
+    background-color:#F485B5;
+    color:#020202;
+    transition: all .4s ease;
+    outline: none;
+    border: 1.5px solid #c70039;
+    cursor: pointer;
+    overflow: hidden;
+	position: fixed;
+	left:3%;
+	bottom:5%;
 }
 .portfolio-text button::before{
     content: "";
     position: absolute;
     width: 0%;
     height: 200%;
-	
     transform: rotate(-15deg) translateY(-20px);
     top: 0;
     left: 0;
@@ -867,7 +899,24 @@ padding-bottom: 40px;
     transition: all .7s ease;
 }
 .portfolio-text button:hover{
-     border: 1.5px solid #FFFFFF;
+     border: 5px solid #FFFFFF;
+	opacity: 1;
+    color:whitesmoke;
+}
+.portfolio-text1 button::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 200%;
+    transform: rotate(-15deg) translateY(-20px);
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background: #c70039;
+    transition: all .7s ease;
+}
+.portfolio-text1 button:hover{
+     border: 3px solid #FFFFFF;
 	opacity: 1;
     color:whitesmoke;
 }
@@ -876,6 +925,10 @@ padding-bottom: 40px;
     z-index: 4;
 }
 .portfolio-text button:hover::before{
+    opacity: 1;
+    width: 120%;
+}
+.portfolio-text1 button:hover::before{
     opacity: 1;
     width: 120%;
 }
